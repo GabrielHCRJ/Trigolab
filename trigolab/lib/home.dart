@@ -7,7 +7,9 @@ class Home extends StatelessWidget {
   @override
   Widget build(context) {
     return Scaffold(
-      appBar: AppBar(backgroundColor: const Color.fromARGB(255, 1, 140, 165)),
+      appBar: AppBar(
+          title: Text('TrigoLab'),
+          backgroundColor: const Color.fromARGB(255, 1, 140, 165)),
       drawer: const CustomDrawer(),
       body: Center(
           child: Container(

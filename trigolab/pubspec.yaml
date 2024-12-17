@@ -66,6 +66,7 @@ flutter:
     - assets/images/logoTrigoLab.png
     - assets/videos/SenoG1.mp4
     - assets/videos/SenoQ1.mp4
+    - assets/images/npc1.png
     
   
   # An image asset can refer to one or more resolution-specific "variants", see

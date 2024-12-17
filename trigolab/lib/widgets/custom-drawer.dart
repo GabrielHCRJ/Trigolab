@@ -14,16 +14,25 @@ class CustomDrawer extends StatelessWidget {
                   Image(image: AssetImage('assets/images/logoTrigoLab.png'))),
         ),
         ListTile(
-            title: const Text('Atividade Duval'),
+            title: const Text('Função Seno'),
             onTap: () {
-              Navigator.pushReplacementNamed(context, '/trigonometria');
+              Navigator.pushReplacementNamed(context, '/atividade-seno');
             }),
-        const Spacer(),
         ListTile(
-            title: const Text('Trigonometria no Triangulo Retângulo'),
-            onTap: () {}),
-        ListTile(title: const Text('Conversor radiano --> grau'), onTap: () {}),
-        ListTile(title: const Text('Conversor grau --> radiano'), onTap: () {}),
+            title: const Text('Função Coseno'),
+            onTap: () {
+              Navigator.pushReplacementNamed(context, '/atividade-cosseno');
+            }),
+        ListTile(
+            title: const Text('Função Tangente'),
+            onTap: () {
+              Navigator.pushReplacementNamed(context, '/atividade-tangente');
+            }),
+        ListTile(
+            title: const Text('About'),
+            onTap: () {
+              Navigator.pushReplacementNamed(context, '/atividade-seno');
+            }),
       ]),
     );
   }
