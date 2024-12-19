@@ -1,6 +1,6 @@
 import 'package:trigolab/seno/data/questions.dart';
 import 'package:trigolab/seno/quiz-seno.dart';
-import 'package:trigolab/seno/start_screen.dart';
+import 'package:trigolab/cosseno/start_screen.dart';
 import 'package:trigolab/tangente/quiz-tangente.dart';
 import 'package:trigolab/trigonometria.dart';
 import 'package:flutter/material.dart';

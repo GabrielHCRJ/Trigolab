@@ -61,7 +61,7 @@ class StartScreen extends StatelessWidget {
                     foregroundColor: const Color.fromARGB(255, 96, 238, 84)),
                 icon: const Icon(Icons.arrow_right_alt),
                 label: const Text(
-                  'Voltar ao Menu',
+                  'Voltar ao xnu',
                   style: TextStyle(
                     color: Color.fromARGB(255, 204, 183, 233),
                     fontSize: 32,
