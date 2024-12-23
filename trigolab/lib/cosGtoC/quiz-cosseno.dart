@@ -1,22 +1,22 @@
-import 'package:trigolab/cosseno/data/questions.dart';
+import 'package:trigolab/seno/data/questions.dart';
 import 'package:trigolab/seno/quiz-seno.dart';
-import 'package:trigolab/cosseno/start_screen.dart';
+import 'package:trigolab/cosGtoC/start_screen.dart';
 import 'package:trigolab/tangente/quiz-tangente.dart';
 import 'package:trigolab/trigonometria.dart';
 import 'package:flutter/material.dart';
-import 'package:trigolab/cosseno/questions_screen.dart';
-import 'package:trigolab/cosseno/results_screen.dart';
+import 'package:trigolab/seno/questions_screen.dart';
+import 'package:trigolab/seno/results_screen.dart';
 
-class QuizCosseno extends StatefulWidget {
-  const QuizCosseno({super.key});
+class QuizCosGtoC extends StatefulWidget {
+  const QuizCosGtoC({super.key});
 
   @override
-  State<QuizCosseno> createState() {
-    return _QuizCossenoState();
+  State<QuizCosGtoC> createState() {
+    return _QuizCosGtoC();
   }
 }
 
-class _QuizCossenoState extends State<QuizCosseno> {
+class _QuizCosGtoC extends State<QuizCosGtoC> {
   List<String> selectedAnswers = [];
   var activeScreen = 'start-screen';
 
@@ -65,14 +65,17 @@ class _QuizCossenoState extends State<QuizCosseno> {
       routes: {
         '/trigonometria': (context) => const Trigonometria(),
         '/atividade-seno': (context) => const QuizSeno(),
-        '/atividade-cosseno': (context) => const QuizCosseno(),
+        '/atividade-cosseno': (context) => const QuizCosGtoC(),
         '/atividade-tangente': (context) => const QuizTangente(),
       },
       home: Scaffold(
         body: Container(
           decoration: const BoxDecoration(
               gradient: LinearGradient(
-            colors: [Color.fromRGBO(9, 147, 172, 100), Colors.white],
+            colors: [
+              Color.fromARGB(255, 63, 22, 134),
+              Color.fromARGB(255, 180, 162, 211)
+            ],
             begin: Alignment.bottomRight,
             end: Alignment.topLeft,
           )),

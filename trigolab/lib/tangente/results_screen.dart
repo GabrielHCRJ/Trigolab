@@ -1,6 +1,7 @@
-import 'package:trigolab/seno/data/questions.dart';
+import 'package:trigolab/tangente/data/questions.dart';
 import 'package:flutter/material.dart';
-import 'package:trigolab/seno/questions_summary.dart';
+import 'package:trigolab/tangente/questions_summary.dart';
+import 'package:trigolab/widgets/typing-ballon.dart';
 
 class ResultsScreen extends StatelessWidget {
   const ResultsScreen({
@@ -37,26 +38,63 @@ class ResultsScreen extends StatelessWidget {
     }).length;
 
     return SizedBox(
-      width: double.infinity,
       child: Container(
         margin: const EdgeInsets.all(40),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-                'Você respondeu $numCorrectQuestions de $numTotalQuestions questões corretamente'),
-            const SizedBox(
-              height: 30,
+              'Você respondeu $numCorrectQuestions de 4 questões corretamente',
+              style: TextStyle(fontFamily: 'Gamer'),
             ),
-            QuestionsSummary(summaryData),
             const SizedBox(
-              height: 30,
+              height: 36,
             ),
-            TextButton(
-              onPressed: onRestart,
-              child:
-                  const Text('Restart', style: TextStyle(color: Colors.white)),
-            )
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Expanded(child: QuestionsSummary(summaryData)),
+                Column(
+                  children: [
+                    TypingBalloon(
+                        'Clique na alternativa para\n ver a resposta correta',
+                        180),
+                    Image.asset(
+                      'assets/images/npc4.png',
+                      width: 200,
+                      height: 200,
+                    ),
+                  ],
+                )
+              ],
+            ),
+            Container(
+              width: double.infinity,
+              height: 8,
+              decoration: const BoxDecoration(
+                  color: Color.fromARGB(255, 9, 147, 172),
+                  borderRadius: BorderRadius.all(Radius.circular(30))),
+            ),
+            SizedBox(
+              height: 24,
+            ),
+            GestureDetector(
+              child: Container(
+                width: 360,
+                height: 80,
+                decoration: const BoxDecoration(
+                    color: Color.fromARGB(255, 9, 147, 172),
+                    borderRadius: BorderRadius.all(Radius.circular(20))),
+                child: Center(
+                    child: Text(
+                  'Continuar',
+                  style: const TextStyle(fontSize: 32, color: Colors.white),
+                )),
+              ),
+              onTap: () {
+                Navigator.pushNamed(context, '/trigonometria');
+              },
+            ),
           ],
         ),
       ),

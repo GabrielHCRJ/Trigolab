@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:trigolab/widgets/custom-drawer.dart';
+import 'package:trigolab/widgets/typing-ballon.dart';
 
 class StartScreen extends StatelessWidget {
   const StartScreen(this.startQuiz, {super.key});
@@ -18,6 +19,7 @@ class StartScreen extends StatelessWidget {
       ),
       drawer: const CustomDrawer(),
       body: Container(
+        padding: EdgeInsets.all(12),
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
@@ -31,10 +33,11 @@ class StartScreen extends StatelessWidget {
         child: Center(
           child: SingleChildScrollView(
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 //Gráfico superior
                 Container(
-                  width: 360,
+                  width: double.infinity,
                   height: 200,
                   decoration: BoxDecoration(
                     color: Colors.black,
@@ -46,46 +49,50 @@ class StartScreen extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  height: 16,
+                  height: 4,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    Image.asset(
-                      'assets/images/npc2.png',
-                      width: 200,
-                      height: 200,
-                    ),
                     Column(
                       children: [
+                        //
                         Container(
-                          width: 200,
-                          padding: const EdgeInsets.all(12),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(16),
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.black26,
-                                blurRadius: 8,
-                                offset: const Offset(0, 4),
-                              ),
-                            ],
-                          ),
-                          child: const Text(
-                            'Sua tarefa é associar o valor do ângulo no círculo ao valor da função trigonométrica correspondente no gráfico da função cosseno',
-                            style: TextStyle(
-                              fontSize: 16,
-                              color: Colors.black87,
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
+                          height: 280,
+                          child: TypingBalloon(
+                              'Sua tarefa é associar o valor do ângulo no círculo ao valor da função trigonométrica correspondente no gráfico da função seno',
+                              240),
                         ),
                         SizedBox(
                           height: 16,
+                        ),
+                        ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.teal[700],
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30),
+                            ),
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 40, vertical: 12),
+                          ),
+                          onPressed: startQuiz,
+                          child: const Text(
+                            'Começar',
+                            style: TextStyle(fontSize: 18, color: Colors.white),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 4,
                         )
                       ],
+                    ),
+                    Expanded(
+                      child: Image.asset(
+                        'assets/images/npc2.png',
+                        width: 200,
+                        height: 200,
+                      ),
                     ),
                   ],
                 ),
@@ -98,38 +105,25 @@ class StartScreen extends StatelessWidget {
                       borderRadius: BorderRadius.all(Radius.circular(30))),
                 ),
                 SizedBox(
-                  height: 16,
+                  height: 4,
                 ),
-                // Botão de iniciar
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.teal[700],
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30),
-                    ),
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 40, vertical: 12),
-                  ),
-                  onPressed: startQuiz,
-                  child: const Text(
-                    'Começar',
-                    style: TextStyle(fontSize: 18, color: Colors.white),
-                  ),
-                ),
+
                 // Gráfico inferior
                 SizedBox(
-                  height: 16,
+                  height: 4,
                 ),
                 Container(
-                  width: 360,
+                  width: double.infinity,
                   height: 200,
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  child: Image.asset(
-                    'assets/images/grafico_cosseno.png',
-                    fit: BoxFit.contain,
+                  child: Expanded(
+                    child: Image.asset(
+                      'assets/images/grafico_cosseno.png',
+                      fit: BoxFit.contain,
+                    ),
                   ),
                 ),
               ],
@@ -140,73 +134,3 @@ class StartScreen extends StatelessWidget {
     );
   }
 }
-
-//   @override
-//   Widget build(context) {
-//     return Center(
-//       child: Column(
-//         mainAxisSize: MainAxisSize.min,
-//         children: [
-//           Container(
-//             color: Colors.deepPurple,
-//             width: 300,
-//             height: 300,
-//             child: const Center(
-//               child: Text(
-//                 'Adicionar informações sobre as atividades aqui',
-//                 style: TextStyle(
-//                   color: Colors.white,
-//                   fontSize: 24,
-//                 ),
-//               ),
-//             ),
-//           ),
-//           const SizedBox(
-//             height: 32,
-//           ),
-//           Text(
-//             'Começar a atividade',
-//             style: GoogleFonts.lato(
-//               color: const Color.fromARGB(255, 195, 163, 247),
-//               fontSize: 24,
-//               fontWeight: FontWeight.bold,
-//             ),
-//           ),
-//           const SizedBox(height: 32),
-//           Row(
-//             children: [
-//               OutlinedButton.icon(
-//
-//                 style: OutlinedButton.styleFrom(
-//                     foregroundColor: const Color.fromARGB(255, 96, 238, 84)),
-//                 icon: const Icon(Icons.arrow_right_alt),
-//                 label: const Text(
-//                   'Start',
-//                   style: TextStyle(
-//                     color: Color.fromARGB(255, 204, 183, 233),
-//                     fontSize: 32,
-//                   ),
-//                 ),
-//               ),
-//               OutlinedButton.icon(
-//                 onPressed: () {
-//                   Navigator.pushReplacementNamed(context, '/trigonometria');
-//                 },
-//                 style: OutlinedButton.styleFrom(
-//                     foregroundColor: const Color.fromARGB(255, 96, 238, 84)),
-//                 icon: const Icon(Icons.arrow_right_alt),
-//                 label: const Text(
-//                   'Voltar ao xeni',
-//                   style: TextStyle(
-//                     color: Color.fromARGB(255, 204, 183, 233),
-//                     fontSize: 32,
-//                   ),
-//                 ),
-//               )
-//             ],
-//           ),
-//         ],
-//       ),
-//     );
-//   }
-// }

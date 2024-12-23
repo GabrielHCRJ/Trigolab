@@ -1,11 +1,11 @@
 import 'package:trigolab/cosseno/quiz-cosseno.dart';
-import 'package:trigolab/seno/data/questions.dart';
+import 'package:trigolab/tangente/data/questions.dart';
 import 'package:trigolab/seno/quiz-seno.dart';
-import 'package:trigolab/seno/start_screen.dart';
+import 'package:trigolab/tangente/start_screen.dart';
 import 'package:trigolab/trigonometria.dart';
 import 'package:flutter/material.dart';
-import 'package:trigolab/seno/questions_screen.dart';
-import 'package:trigolab/seno/results_screen.dart';
+import 'package:trigolab/tangente/questions_screen.dart';
+import 'package:trigolab/tangente/results_screen.dart';
 
 class QuizTangente extends StatefulWidget {
   const QuizTangente({super.key});
@@ -72,12 +72,9 @@ class _QuizTangenteState extends State<QuizTangente> {
         body: Container(
           decoration: const BoxDecoration(
               gradient: LinearGradient(
-            colors: [
-              Color.fromARGB(255, 63, 22, 134),
-              Color.fromARGB(255, 180, 162, 211)
-            ],
-            begin: Alignment.bottomRight,
-            end: Alignment.topLeft,
+            colors: [Color.fromRGBO(9, 147, 172, 100), Colors.white],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
           )),
           child: screenWidget,
         ),

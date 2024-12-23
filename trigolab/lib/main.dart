@@ -1,5 +1,7 @@
+import 'package:trigolab/cosGtoC/quiz-cosseno.dart';
 import 'package:trigolab/cosseno/quiz-cosseno.dart';
 import 'package:trigolab/seno/quiz-seno.dart';
+import 'package:trigolab/senoGtoC/quiz-seno.dart';
 import 'package:trigolab/tangente/quiz-tangente.dart';
 import 'package:trigolab/trigonometria.dart';
 import 'package:flutter/material.dart';
@@ -28,6 +30,8 @@ class MyApp extends StatelessWidget {
           '/atividade-seno': (context) => const QuizSeno(),
           '/atividade-cosseno': (context) => const QuizCosseno(),
           '/atividade-tangente': (context) => const QuizTangente(),
+          '/atividade-cosGtoC': (context) => const QuizCosGtoC(),
+          '/atividade-senoGtoC': (context) => const QuizSenoGtoC(),
         });
   }
 }

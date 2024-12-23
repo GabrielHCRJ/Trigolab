@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:trigolab/tangente/answer_button.dart';
-import 'package:trigolab/tangente/data/questions.dart';
+import 'package:trigolab/seno/answer_button.dart';
+import 'package:trigolab/seno/data/questions.dart';
 import 'package:video_player/video_player.dart';
 
 class QuestionsScreen extends StatefulWidget {
@@ -65,13 +65,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
     final currentQuestion = questions[currentQuestionIndex];
 
     return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [const Color.fromARGB(255, 9, 147, 172), Colors.white],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-      ),
+      color: Colors.deepPurpleAccent,
       child: Padding(
         padding: const EdgeInsets.all(10),
         child: Container(

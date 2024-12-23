@@ -92,7 +92,7 @@ class ResultsScreen extends StatelessWidget {
                 )),
               ),
               onTap: () {
-                Navigator.pushNamed(context, '/atividade-senoGtoC');
+                Navigator.pushNamed(context, '/trigonometria');
               },
             ),
           ],

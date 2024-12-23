@@ -1,4 +1,4 @@
-import 'package:trigolab/seno/models/quiz_question.dart';
+import 'package:trigolab/cosseno/models/quiz_question.dart';
 
 const questions = [
   QuizQuestion(
@@ -13,8 +13,8 @@ const questions = [
   QuizQuestion(
     'assets/videos/SenoQ1.mp4', // URL do vídeo
     [
-      'B',
       'A',
+      'B',
       'C',
       'D',
     ],
@@ -22,19 +22,37 @@ const questions = [
   QuizQuestion(
     'assets/videos/SenoQ1.mp4', // URL do vídeo
     [
-      'C',
-      'B',
       'A',
+      'B',
+      'C',
       'D',
     ],
   ),
   QuizQuestion(
     'assets/videos/SenoQ1.mp4', // URL do vídeo
     [
-      'D',
+      'A',
       'B',
       'C',
+      'D',
+    ],
+  ),
+  QuizQuestion(
+    'assets/videos/SenoQ1.mp4', // URL do vídeo
+    [
       'A',
+      'B',
+      'C',
+      'D',
+    ],
+  ),
+  QuizQuestion(
+    'assets/videos/SenoQ1.mp4', // URL do vídeo
+    [
+      'A',
+      'B',
+      'C',
+      'D',
     ],
   ),
 ];
