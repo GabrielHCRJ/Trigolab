@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:trigolab/cosGtoC/answer_button.dart';
-import 'package:trigolab/cosGtoC/data/questions.dart';
+import 'package:trigolab/tangenteGtoC/answer_button.dart';
+import 'package:trigolab/tangenteGtoC/data/questions.dart';
 import 'package:video_player/video_player.dart';
 
 class QuestionsScreen extends StatefulWidget {

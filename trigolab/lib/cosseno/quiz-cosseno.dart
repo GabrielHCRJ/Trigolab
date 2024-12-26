@@ -1,3 +1,4 @@
+import 'package:trigolab/cosGtoC/quiz-cosseno.dart';
 import 'package:trigolab/cosseno/data/questions.dart';
 import 'package:trigolab/seno/quiz-seno.dart';
 import 'package:trigolab/cosseno/start_screen.dart';
@@ -67,6 +68,7 @@ class _QuizCossenoState extends State<QuizCosseno> {
         '/atividade-seno': (context) => const QuizSeno(),
         '/atividade-cosseno': (context) => const QuizCosseno(),
         '/atividade-tangente': (context) => const QuizTangente(),
+        '/atividade-cosGtoC': (context) => const QuizCosGtoC(),
       },
       home: Scaffold(
         body: Container(

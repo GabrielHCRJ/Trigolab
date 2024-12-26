@@ -31,7 +31,7 @@ class CustomDrawer extends StatelessWidget {
         ListTile(
             title: const Text('About'),
             onTap: () {
-              Navigator.pushReplacementNamed(context, '/atividade-seno');
+              Navigator.pushReplacementNamed(context, '/about');
             }),
       ]),
     );

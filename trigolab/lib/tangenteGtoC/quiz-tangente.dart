@@ -1,23 +1,24 @@
 import 'package:trigolab/cosseno/quiz-cosseno.dart';
-import 'package:trigolab/tangente/data/questions.dart';
+import 'package:trigolab/feedbackscreen.dart';
+import 'package:trigolab/tangente/quiz-tangente.dart';
+import 'package:trigolab/tangenteGtoC/data/questions.dart';
 import 'package:trigolab/seno/quiz-seno.dart';
-import 'package:trigolab/tangente/start_screen.dart';
-import 'package:trigolab/tangenteGtoC/quiz-tangente.dart';
+import 'package:trigolab/tangenteGtoC/start_screen.dart';
 import 'package:trigolab/trigonometria.dart';
 import 'package:flutter/material.dart';
-import 'package:trigolab/tangente/questions_screen.dart';
-import 'package:trigolab/tangente/results_screen.dart';
+import 'package:trigolab/tangenteGtoC/questions_screen.dart';
+import 'package:trigolab/tangenteGtoC/results_screen.dart';
 
-class QuizTangente extends StatefulWidget {
-  const QuizTangente({super.key});
+class QuizTangenteGtoC extends StatefulWidget {
+  const QuizTangenteGtoC({super.key});
 
   @override
-  State<QuizTangente> createState() {
-    return _QuizTangenteState();
+  State<QuizTangenteGtoC> createState() {
+    return _QuizTangenteStateGtoC();
   }
 }
 
-class _QuizTangenteState extends State<QuizTangente> {
+class _QuizTangenteStateGtoC extends State<QuizTangenteGtoC> {
   List<String> selectedAnswers = [];
   var activeScreen = 'start-screen';
 
@@ -69,6 +70,7 @@ class _QuizTangenteState extends State<QuizTangente> {
         '/atividade-cosseno': (context) => const QuizCosseno(),
         '/atividade-tangente': (context) => const QuizTangente(),
         '/atividade-tangenteGtoC': (context) => const QuizTangenteGtoC(),
+        '/feedback': (context) => const FeedbackScreen(),
       },
       home: Scaffold(
         body: Container(

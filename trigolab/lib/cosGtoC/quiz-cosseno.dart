@@ -1,11 +1,11 @@
-import 'package:trigolab/seno/data/questions.dart';
-import 'package:trigolab/seno/quiz-seno.dart';
 import 'package:trigolab/cosGtoC/start_screen.dart';
+import 'package:trigolab/cosGtoC/data/questions.dart';
+import 'package:trigolab/cosGtoC/questions_screen.dart';
+import 'package:trigolab/cosGtoC/results_screen.dart';
+import 'package:trigolab/seno/quiz-seno.dart';
 import 'package:trigolab/tangente/quiz-tangente.dart';
 import 'package:trigolab/trigonometria.dart';
 import 'package:flutter/material.dart';
-import 'package:trigolab/seno/questions_screen.dart';
-import 'package:trigolab/seno/results_screen.dart';
 
 class QuizCosGtoC extends StatefulWidget {
   const QuizCosGtoC({super.key});
@@ -72,10 +72,7 @@ class _QuizCosGtoC extends State<QuizCosGtoC> {
         body: Container(
           decoration: const BoxDecoration(
               gradient: LinearGradient(
-            colors: [
-              Color.fromARGB(255, 63, 22, 134),
-              Color.fromARGB(255, 180, 162, 211)
-            ],
+            colors: [Color.fromRGBO(9, 147, 172, 100), Colors.white],
             begin: Alignment.bottomRight,
             end: Alignment.topLeft,
           )),

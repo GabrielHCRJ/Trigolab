@@ -7,7 +7,6 @@ class StartScreen extends StatelessWidget {
   const StartScreen(this.startQuiz, {super.key});
 
   final void Function() startQuiz;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -57,15 +56,9 @@ class StartScreen extends StatelessWidget {
                   children: [
                     Column(
                       children: [
-                        //
                         Container(
                           height: 280,
-                          child: TypingBalloon(
-                              'Suaasdas tarefa cccco valor do ângulo no círculo ao valor da função trigonométrica correspondente no gráfico da função seno',
-                              240),
-                        ),
-                        SizedBox(
-                          height: 16,
+                          child: TypingBalloon('TANGENTE G TO C', 240),
                         ),
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
@@ -87,12 +80,16 @@ class StartScreen extends StatelessWidget {
                         )
                       ],
                     ),
-                    Expanded(
-                      child: Image.asset(
-                        'assets/images/npc3.png',
-                        width: 200,
-                        height: 200,
-                      ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Image.asset(
+                          'assets/images/npc4.png',
+                          width: 140,
+                          height: 150,
+                        ),
+                      ],
                     ),
                   ],
                 ),
