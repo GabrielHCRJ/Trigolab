@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:trigolab/widgets/custom-drawer.dart';
 import 'package:trigolab/widgets/typing-ballon.dart';

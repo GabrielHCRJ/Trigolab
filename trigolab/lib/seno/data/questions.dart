@@ -11,16 +11,16 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    'assets/videos/SenoQ1.mp4', // URL do vídeo
+    'assets/videos/SenoQ2.mp4', // URL do vídeo
     [
-      'B',
-      'A',
       'C',
+      'A',
+      'B',
       'D',
     ],
   ),
   QuizQuestion(
-    'assets/videos/SenoQ1.mp4', // URL do vídeo
+    'assets/videos/SenoQ3.mp4', // URL do vídeo
     [
       'C',
       'B',
@@ -29,7 +29,7 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    'assets/videos/SenoQ1.mp4', // URL do vídeo
+    'assets/videos/SenoQ4.mp4', // URL do vídeo
     [
       'D',
       'B',

@@ -67,11 +67,28 @@ flutter:
     - assets/images/logoTrigoLab.png
     - assets/videos/SenoG1.mp4
     - assets/videos/SenoQ1.mp4
+    - assets/videos/SenoQ2.mp4
+    - assets/videos/SenoQ3.mp4
+    - assets/videos/SenoQ4.mp4
+    - assets/videos/SenoG1.mp4
+    - assets/videos/CosQ1.mp4
+    - assets/videos/CosQ2.mp4
+    - assets/videos/CosQ3.mp4
+    - assets/videos/CosQ4.mp4
+    - assets/videos/TgQ1.mp4
+    - assets/videos/TgQ2.mp4
+    - assets/videos/TgQ3.mp4
+    - assets/videos/TgQ4.mp4
     - assets/images/npc1.png
     - assets/images/npc2.png
     - assets/images/npc3.png
     - assets/images/npc4.png
     - assets/images/npcs.png
+    - assets/images/circuloTrigonometrico.png
+    - assets/images/funcaoSeno.png
+    - assets/images/funcaoCosseno.png
+    - assets/images/funcaoTangente.png
+    - assets/images/SenoQ1R.png
     
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

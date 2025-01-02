@@ -44,7 +44,7 @@ class StartScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Image.asset(
-                    'assets/images/grafico_circulo.png',
+                    'assets/images/circuloTrigonometrico.png',
                     fit: BoxFit.contain,
                   ),
                 ),
@@ -121,7 +121,7 @@ class StartScreen extends StatelessWidget {
                   ),
                   child: Expanded(
                     child: Image.asset(
-                      'assets/images/grafico_cosseno.png',
+                      'assets/images/funcaoSeno.png',
                       fit: BoxFit.contain,
                     ),
                   ),

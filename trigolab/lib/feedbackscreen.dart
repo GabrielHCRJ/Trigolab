@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trigolab/widgets/custom-drawer.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class FeedbackScreen extends StatelessWidget {
@@ -18,10 +19,12 @@ class FeedbackScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Trigo Lab'),
+        title: const Text('Trigo Lab',
+            style: TextStyle(color: Colors.white, fontSize: 32)),
         backgroundColor: const Color(0xFF007B83), // Cor do AppBar
         centerTitle: true,
       ),
+      drawer: const CustomDrawer(),
       body: Container(
         width: double.infinity,
         decoration: const BoxDecoration(
@@ -40,12 +43,12 @@ class FeedbackScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                'Responda nosso formulário no Google e nos ajude a melhorar o app cada vez mais',
+                'Obrigado por Participar \n\n Responda nosso formulário no Google e nos ajude a melhorar o app cada vez mais',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
-                  fontFamily: 'Roboto', // Personalize com sua fonte preferida
+                  fontFamily: 'Gamer', // Personalize com sua fonte preferida
                 ),
               ),
               const SizedBox(height: 20),
@@ -54,11 +57,17 @@ class FeedbackScreen extends StatelessWidget {
                     'assets/images/npcs.png'), // Substitua pelo caminho do seu asset
                 height: 150,
               ),
+              Container(
+                width: double.infinity,
+                height: 8,
+                decoration: const BoxDecoration(
+                    color: Color.fromARGB(255, 9, 147, 172),
+                    borderRadius: BorderRadius.all(Radius.circular(30))),
+              ),
               const SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {
-                  _launchURL(
-                      'https://forms.google.com'); // Substitua pelo link do Google Forms
+                  _launchURL('https://forms.google.com');
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFF007B83),
@@ -71,7 +80,7 @@ class FeedbackScreen extends StatelessWidget {
                 child: const Text(
                   'Google Forms',
                   style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 32,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                   ),

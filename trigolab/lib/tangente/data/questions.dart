@@ -2,7 +2,7 @@ import 'package:trigolab/tangente/models/quiz_question.dart';
 
 const questions = [
   QuizQuestion(
-    'assets/videos/SenoQ1.mp4', // URL do vídeo
+    'assets/videos/TgQ1.mp4', // URL do vídeo
     [
       'A',
       'B',
@@ -11,7 +11,7 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    'assets/videos/SenoQ1.mp4', // URL do vídeo
+    'assets/videos/TgQ2.mp4', // URL do vídeo
     [
       'A',
       'B',
@@ -20,7 +20,7 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    'assets/videos/SenoQ1.mp4', // URL do vídeo
+    'assets/videos/TgQ3.mp4', // URL do vídeo
     [
       'A',
       'B',
@@ -29,7 +29,7 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    'assets/videos/SenoQ1.mp4', // URL do vídeo
+    'assets/videos/TgQ4.mp4', // URL do vídeo
     [
       'A',
       'B',

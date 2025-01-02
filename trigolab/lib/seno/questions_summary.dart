@@ -8,7 +8,7 @@ class QuestionsSummary extends StatelessWidget {
   void _showCustomDialog(BuildContext context, int index) {
     // Define os caminhos das imagens nos assets
     final imagePaths = [
-      'assets/images/image1.png', // Imagem para o círculo 1
+      'assets/images/SenoQ1R.png', // Imagem para o círculo 1
       'assets/images/image2.png', // Imagem para o círculo 2
       'assets/images/image3.png', // Imagem para o círculo 3
       'assets/images/image4.png', // Imagem para o círculo 4
@@ -37,6 +37,9 @@ class QuestionsSummary extends StatelessWidget {
                   child: Image.asset(
                     imagePaths[index],
                     fit: BoxFit.cover,
+                    height: 400, // Ajusta a altura da imagem
+                    width:
+                        double.infinity, // Faz a largura ocupar todo o espaço
                   ),
                 ),
                 const SizedBox(height: 20),

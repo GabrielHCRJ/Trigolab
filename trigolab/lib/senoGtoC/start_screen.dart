@@ -44,7 +44,7 @@ class StartScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: Image.asset(
-                    'assets/images/grafico_circulo.png',
+                    'assets/images/funcaoSeno.png',
                     fit: BoxFit.contain,
                   ),
                 ),
@@ -61,7 +61,7 @@ class StartScreen extends StatelessWidget {
                         Container(
                           height: 280,
                           child: TypingBalloon(
-                              'Agora inverteremos a atividade. Com o valor da função, ache o ângulo no círculo',
+                              'Agora inverteremos a atividade. Com o valor da função, ache o ângulo no círculo trigonométrico',
                               240),
                         ),
                         SizedBox(
@@ -121,7 +121,7 @@ class StartScreen extends StatelessWidget {
                   ),
                   child: Expanded(
                     child: Image.asset(
-                      'assets/images/grafico_cosseno.png',
+                      'assets/images/circuloTrigonometrico.png',
                       fit: BoxFit.contain,
                     ),
                   ),

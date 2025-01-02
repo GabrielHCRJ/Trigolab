@@ -8,7 +8,8 @@ class Home extends StatelessWidget {
   Widget build(context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text('TrigoLab'),
+          title: Text('TrigoLab',
+              style: TextStyle(color: Colors.white, fontSize: 32)),
           backgroundColor: const Color.fromARGB(255, 1, 140, 165)),
       drawer: const CustomDrawer(),
       body: Center(

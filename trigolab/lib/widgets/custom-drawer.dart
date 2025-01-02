@@ -14,6 +14,11 @@ class CustomDrawer extends StatelessWidget {
                   Image(image: AssetImage('assets/images/logoTrigoLab.png'))),
         ),
         ListTile(
+            title: const Text('Inicio'),
+            onTap: () {
+              Navigator.pushReplacementNamed(context, '/trigonometria');
+            }),
+        ListTile(
             title: const Text('Função Seno'),
             onTap: () {
               Navigator.pushReplacementNamed(context, '/atividade-seno');
