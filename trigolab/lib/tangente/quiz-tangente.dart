@@ -1,3 +1,4 @@
+import 'package:trigolab/about-screen.dart';
 import 'package:trigolab/cosseno/quiz-cosseno.dart';
 import 'package:trigolab/tangente/data/questions.dart';
 import 'package:trigolab/seno/quiz-seno.dart';
@@ -61,7 +62,7 @@ class _QuizTangenteState extends State<QuizTangente> {
       );
     }
     return MaterialApp(
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
         '/trigonometria': (context) => const Trigonometria(),
@@ -69,6 +70,7 @@ class _QuizTangenteState extends State<QuizTangente> {
         '/atividade-cosseno': (context) => const QuizCosseno(),
         '/atividade-tangente': (context) => const QuizTangente(),
         '/atividade-tangenteGtoC': (context) => const QuizTangenteGtoC(),
+        '/about': (context) => const AboutScreen(),
       },
       home: Scaffold(
         body: Container(

@@ -1,5 +1,5 @@
 name: trigolab
-description: "A new Flutter project."
+description: "A ."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -65,20 +65,30 @@ flutter:
   assets:
     - assets/images/quiz-logo.png
     - assets/images/logoTrigoLab.png
-    - assets/videos/SenoG1.mp4
     - assets/videos/SenoQ1.mp4
     - assets/videos/SenoQ2.mp4
     - assets/videos/SenoQ3.mp4
     - assets/videos/SenoQ4.mp4
     - assets/videos/SenoG1.mp4
+    - assets/videos/SenoG2.mp4
+    - assets/videos/SenoG3.mp4
+    - assets/videos/SenoG4.mp4
     - assets/videos/CosQ1.mp4
     - assets/videos/CosQ2.mp4
     - assets/videos/CosQ3.mp4
     - assets/videos/CosQ4.mp4
+    - assets/videos/CosG1.mp4
+    - assets/videos/CosG2.mp4
+    - assets/videos/CosG3.mp4
+    - assets/videos/CosG4.mp4
     - assets/videos/TgQ1.mp4
     - assets/videos/TgQ2.mp4
     - assets/videos/TgQ3.mp4
     - assets/videos/TgQ4.mp4
+    - assets/videos/tgG1.mp4
+    - assets/videos/tgG2.mp4
+    - assets/videos/tgG3.mp4
+    - assets/videos/tgG4.mp4
     - assets/images/npc1.png
     - assets/images/npc2.png
     - assets/images/npc3.png
@@ -88,7 +98,31 @@ flutter:
     - assets/images/funcaoSeno.png
     - assets/images/funcaoCosseno.png
     - assets/images/funcaoTangente.png
-    - assets/images/SenoQ1R.png
+    - assets/images/Respostas/SenoQ1R.png
+    - assets/images/Respostas/SenoQ2R.png
+    - assets/images/Respostas/SenoQ3R.png
+    - assets/images/Respostas/SenoQ4R.png
+    - assets/images/Respostas/CosQ1R.png
+    - assets/images/Respostas/CosQ2R.png
+    - assets/images/Respostas/CosQ3R.png
+    - assets/images/Respostas/CosQ4R.png
+    - assets/images/Respostas/TgQ1R.png
+    - assets/images/Respostas/TgQ2R.png
+    - assets/images/Respostas/TgQ3R.png
+    - assets/images/Respostas/TgQ4R.png
+    - assets/images/Respostas/TgG1R.png
+    - assets/images/Respostas/TgG2R.png
+    - assets/images/Respostas/TgG3R.png
+    - assets/images/Respostas/TgG4R.png
+    - assets/images/Respostas/SenoG1R.png
+    - assets/images/Respostas/SenoG2R.png
+    - assets/images/Respostas/SenoG3R.png
+    - assets/images/Respostas/SenoG4R.png
+    - assets/images/Respostas/CosG1R.png
+    - assets/images/Respostas/CosG2R.png
+    - assets/images/Respostas/CosG3R.png
+    - assets/images/Respostas/CosG4R.png
+
     
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

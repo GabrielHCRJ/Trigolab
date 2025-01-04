@@ -13,8 +13,8 @@ const questions = [
   QuizQuestion(
     'assets/videos/TgQ2.mp4', // URL do vídeo
     [
-      'A',
       'B',
+      'A',
       'C',
       'D',
     ],
@@ -22,19 +22,19 @@ const questions = [
   QuizQuestion(
     'assets/videos/TgQ3.mp4', // URL do vídeo
     [
-      'A',
-      'B',
       'C',
+      'B',
+      'A',
       'D',
     ],
   ),
   QuizQuestion(
     'assets/videos/TgQ4.mp4', // URL do vídeo
     [
-      'A',
-      'B',
-      'C',
       'D',
+      'B',
+      'A',
+      'C',
     ],
   ),
 ];

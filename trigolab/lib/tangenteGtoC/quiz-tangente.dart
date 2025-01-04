@@ -1,8 +1,10 @@
-import 'package:trigolab/cosseno/quiz-cosseno.dart';
-import 'package:trigolab/feedbackscreen.dart';
-import 'package:trigolab/tangente/quiz-tangente.dart';
-import 'package:trigolab/tangenteGtoC/data/questions.dart';
+import 'package:trigolab/about-screen.dart';
 import 'package:trigolab/seno/quiz-seno.dart';
+import 'package:trigolab/cosseno/quiz-cosseno.dart';
+import 'package:trigolab/tangente/quiz-tangente.dart';
+
+import 'package:trigolab/feedbackscreen.dart';
+import 'package:trigolab/tangenteGtoC/data/questions.dart';
 import 'package:trigolab/tangenteGtoC/start_screen.dart';
 import 'package:trigolab/trigonometria.dart';
 import 'package:flutter/material.dart';
@@ -62,7 +64,7 @@ class _QuizTangenteStateGtoC extends State<QuizTangenteGtoC> {
       );
     }
     return MaterialApp(
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
         '/trigonometria': (context) => const Trigonometria(),
@@ -71,6 +73,7 @@ class _QuizTangenteStateGtoC extends State<QuizTangenteGtoC> {
         '/atividade-tangente': (context) => const QuizTangente(),
         '/atividade-tangenteGtoC': (context) => const QuizTangenteGtoC(),
         '/feedback': (context) => const FeedbackScreen(),
+        '/about': (context) => const AboutScreen(),
       },
       home: Scaffold(
         body: Container(

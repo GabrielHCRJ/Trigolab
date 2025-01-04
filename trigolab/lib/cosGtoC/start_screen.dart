@@ -61,7 +61,7 @@ class StartScreen extends StatelessWidget {
                         Container(
                           height: 280,
                           child: TypingBalloon(
-                              'Suaasdas tarefa cccco valor do ângulo no círculo ao valor da função trigonométrica correspondente no gráfico da função seno',
+                              'Agora inverteremos a atividade. Com o valor da função, ache o ângulo no círculo trigonométrico',
                               240),
                         ),
                         SizedBox(

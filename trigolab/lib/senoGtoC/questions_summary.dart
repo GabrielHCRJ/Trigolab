@@ -8,10 +8,10 @@ class QuestionsSummary extends StatelessWidget {
   void _showCustomDialog(BuildContext context, int index) {
     // Define os caminhos das imagens nos assets
     final imagePaths = [
-      'assets/images/SenoQ1R', // Imagem para o círculo 1
-      'assets/images/image2.png', // Imagem para o círculo 2
-      'assets/images/image3.png', // Imagem para o círculo 3
-      'assets/images/image4.png', // Imagem para o círculo 4
+      'assets/images/Respostas/SenoG1R.png', // Imagem para o círculo 1
+      'assets/images/Respostas/SenoG2R.png', // Imagem para o círculo 2
+      'assets/images/Respostas/SenoG3R.png', // Imagem para o círculo 3
+      'assets/images/Respostas/SenoG4R.png', // Imagem para o círculo 4
     ];
 
     // Verifica se o índice é válido antes de exibir o diálogo
@@ -37,7 +37,7 @@ class QuestionsSummary extends StatelessWidget {
                   child: Image.asset(
                     imagePaths[index],
                     fit: BoxFit.cover,
-                    height: 300, // Ajusta a altura da imagem
+                    height: 400, // Ajusta a altura da imagem
                     width:
                         double.infinity, // Faz a largura ocupar todo o espaço
                   ),
@@ -111,7 +111,9 @@ class QuestionsSummary extends StatelessWidget {
               Expanded(
                 child: Text(
                   '${(data['correct_answer'] as String)}',
-                  style: const TextStyle(fontSize: 16, fontFamily: 'Gamer'),
+                  style: const TextStyle(
+                    fontSize: 16,
+                  ),
                 ),
               ),
             ],

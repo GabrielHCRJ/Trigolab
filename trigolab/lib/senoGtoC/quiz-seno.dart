@@ -1,7 +1,8 @@
+import 'package:trigolab/about-screen.dart';
 import 'package:trigolab/cosseno/quiz-cosseno.dart';
+import 'package:trigolab/tangente/quiz-tangente.dart';
 import 'package:trigolab/senoGtoC/data/questions.dart';
 import 'package:trigolab/senoGtoC/start_screen.dart';
-import 'package:trigolab/tangente/quiz-tangente.dart';
 import 'package:trigolab/trigonometria.dart';
 import 'package:flutter/material.dart';
 import 'package:trigolab/senoGtoC/questions_screen.dart';
@@ -60,13 +61,14 @@ class _QuizSenoState extends State<QuizSenoGtoC> {
       );
     }
     return MaterialApp(
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
         '/trigonometria': (context) => const Trigonometria(),
         '/atividade-cosseno': (context) => const QuizCosseno(),
         '/atividade-tangente': (context) => const QuizTangente(),
         '/atividade-senoGtoC': (context) => const QuizSenoGtoC(),
+        '/about': (context) => const AboutScreen(),
       },
       home: Scaffold(
         body: Container(

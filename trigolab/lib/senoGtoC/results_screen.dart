@@ -1,6 +1,6 @@
-import 'package:trigolab/seno/data/questions.dart';
+import 'package:trigolab/senoGtoC/data/questions.dart';
 import 'package:flutter/material.dart';
-import 'package:trigolab/seno/questions_summary.dart';
+import 'package:trigolab/senoGtoC/questions_summary.dart';
 import 'package:trigolab/widgets/typing-ballon.dart';
 
 class ResultsScreen extends StatelessWidget {

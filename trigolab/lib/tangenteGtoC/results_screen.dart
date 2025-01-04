@@ -1,6 +1,6 @@
-import 'package:trigolab/tangente/data/questions.dart';
+import 'package:trigolab/tangenteGtoC/data/questions.dart';
 import 'package:flutter/material.dart';
-import 'package:trigolab/tangente/questions_summary.dart';
+import 'package:trigolab/tangenteGtoC/questions_summary.dart';
 import 'package:trigolab/widgets/typing-ballon.dart';
 
 class ResultsScreen extends StatelessWidget {

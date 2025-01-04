@@ -58,7 +58,9 @@ class StartScreen extends StatelessWidget {
                       children: [
                         Container(
                           height: 280,
-                          child: TypingBalloon('TANGENTE G TO C', 240),
+                          child: TypingBalloon(
+                              'Agora inverteremos a atividade. Com o valor da função, ache o ângulo no círculo trigonométrico',
+                              240),
                         ),
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(

@@ -4,14 +4,14 @@ const questions = [
   QuizQuestion(
     'assets/videos/SenoG1.mp4', // URL do vídeo
     [
-      'B',
       'A',
+      'B',
       'C',
       'D',
     ],
   ),
   QuizQuestion(
-    'assets/videos/SenoG1.mp4', // URL do vídeo
+    'assets/videos/SenoG2.mp4', // URL do vídeo
     [
       'B',
       'A',
@@ -20,7 +20,7 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    'assets/videos/SenoG1.mp4', // URL do vídeo
+    'assets/videos/SenoG3.mp4', // URL do vídeo
     [
       'C',
       'B',
@@ -29,7 +29,7 @@ const questions = [
     ],
   ),
   QuizQuestion(
-    'assets/videos/SenoG1.mp4', // URL do vídeo
+    'assets/videos/SenoG4.mp4', // URL do vídeo
     [
       'D',
       'B',

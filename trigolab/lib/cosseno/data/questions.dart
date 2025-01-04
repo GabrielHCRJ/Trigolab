@@ -4,7 +4,7 @@ const questions = [
   QuizQuestion(
     'assets/videos/CosQ1.mp4', // URL do vídeo
     [
-      'B',
+      'A',
       'B',
       'C',
       'D',
@@ -13,27 +13,27 @@ const questions = [
   QuizQuestion(
     'assets/videos/CosQ2.mp4', // URL do vídeo
     [
-      'A',
-      'B',
       'C',
+      'B',
+      'A',
       'D',
     ],
   ),
   QuizQuestion(
     'assets/videos/CosQ3.mp4', // URL do vídeo
     [
-      'A',
+      'D',
       'B',
       'C',
-      'D',
+      'A',
     ],
   ),
   QuizQuestion(
     'assets/videos/CosQ4.mp4', // URL do vídeo
     [
-      'A',
-      'B',
       'C',
+      'B',
+      'A',
       'D',
     ],
   ),

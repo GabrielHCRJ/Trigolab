@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:trigolab/seno/answer_button.dart';
-import 'package:trigolab/seno/data/questions.dart';
+import 'package:trigolab/senoGtoC/answer_button.dart';
+import 'package:trigolab/senoGtoC/data/questions.dart';
 import 'package:video_player/video_player.dart';
 
 class QuestionsScreen extends StatefulWidget {

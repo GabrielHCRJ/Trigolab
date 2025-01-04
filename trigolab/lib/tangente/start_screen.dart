@@ -59,7 +59,7 @@ class StartScreen extends StatelessWidget {
                         Container(
                           height: 280,
                           child: TypingBalloon(
-                              'Sua tarefa é associar o valor do ângulo no círculo ao valor da função trigonométrica correspondente no gráfico da função seno',
+                              'Sua tarefa é associar o valor do ângulo no círculo ao valor da função trigonométrica correspondente no gráfico da função tangente',
                               240),
                         ),
                         ElevatedButton(

@@ -1,3 +1,4 @@
+import 'package:trigolab/about-screen.dart';
 import 'package:trigolab/cosGtoC/start_screen.dart';
 import 'package:trigolab/cosGtoC/data/questions.dart';
 import 'package:trigolab/cosGtoC/questions_screen.dart';
@@ -60,13 +61,14 @@ class _QuizCosGtoC extends State<QuizCosGtoC> {
       );
     }
     return MaterialApp(
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
         '/trigonometria': (context) => const Trigonometria(),
         '/atividade-seno': (context) => const QuizSeno(),
         '/atividade-cosseno': (context) => const QuizCosGtoC(),
         '/atividade-tangente': (context) => const QuizTangente(),
+        '/about': (context) => const AboutScreen(),
       },
       home: Scaffold(
         body: Container(
