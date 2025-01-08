@@ -107,23 +107,16 @@ class StartScreen extends StatelessWidget {
                 SizedBox(
                   height: 4,
                 ),
-
-                // Gráfico inferior
-                SizedBox(
-                  height: 4,
-                ),
                 Container(
                   width: double.infinity,
-                  height: 200,
+                  height: 180,
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  child: Expanded(
-                    child: Image.asset(
-                      'assets/images/funcaoCosseno.png',
-                      fit: BoxFit.contain,
-                    ),
+                  child: Image.asset(
+                    'assets/images/funcaoCosseno.png',
+                    fit: BoxFit.contain,
                   ),
                 ),
               ],

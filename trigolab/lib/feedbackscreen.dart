@@ -8,19 +8,53 @@ class FeedbackScreen extends StatelessWidget {
   // Método para abrir o link externo
   Future<void> _launchURL(String url) async {
     final Uri uri = Uri.parse(url);
-    if (await canLaunchUrl(uri)) {
-      await launchUrl(uri, mode: LaunchMode.externalApplication);
-    } else {
-      throw 'Não foi possível abrir o link $url';
+
+    try {
+      if (await canLaunchUrl(uri)) {
+        await launchUrl(
+          uri,
+          mode: LaunchMode
+              .externalApplication, // Garante uso do navegador externo
+        );
+      } else {
+        throw 'Não foi possível abrir o link $url';
+      }
+    } catch (e) {
+      debugPrint('Erro ao abrir o link: $url\n$e');
+      // Mostra um alerta ao usuário
+      _showErrorDialog();
     }
+  }
+
+  // Método para exibir um diálogo de erro
+  void _showErrorDialog() {
+    // Use o contexto do Navigator para exibir o diálogo
+    showDialog(
+      context: navigatorKey.currentContext!,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Erro'),
+          content: const Text(
+              'Não foi possível abrir o link. Verifique sua conexão com a internet ou tente novamente mais tarde.'),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: const Text('OK'),
+            ),
+          ],
+        );
+      },
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Trigo Lab',
-            style: TextStyle(color: Colors.white, fontSize: 32)),
+        title: const Text(
+          'Trigo Lab',
+          style: TextStyle(color: Colors.white, fontSize: 32),
+        ),
         backgroundColor: const Color(0xFF007B83), // Cor do AppBar
         centerTitle: true,
       ),
@@ -61,13 +95,14 @@ class FeedbackScreen extends StatelessWidget {
                 width: double.infinity,
                 height: 8,
                 decoration: const BoxDecoration(
-                    color: Color.fromARGB(255, 9, 147, 172),
-                    borderRadius: BorderRadius.all(Radius.circular(30))),
+                  color: Color.fromARGB(255, 9, 147, 172),
+                  borderRadius: BorderRadius.all(Radius.circular(30)),
+                ),
               ),
               const SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {
-                  _launchURL('https://forms.google.com');
+                  _launchURL('https://forms.gle/4ZBNkr1ArZYHEwL49');
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFF007B83),
@@ -93,3 +128,6 @@ class FeedbackScreen extends StatelessWidget {
     );
   }
 }
+
+// Adicione esta variável global para acessar o contexto
+final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();

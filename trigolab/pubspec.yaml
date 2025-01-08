@@ -1,5 +1,5 @@
 name: trigolab
-description: "A ."
+description: "Aplicativo feito para o TCC de Gabriel Domingues ."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -36,12 +36,25 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
   google_fonts: ^6.2.1
-  video_player: ^2.8.7
   url_launcher: ^6.3.1
+  flutter_launcher_icons: 0.13.0
+  video_player: ^2.8.7
+  
+
 
 dev_dependencies:
+
   flutter_test:
     sdk: flutter
+
+flutter_icons:
+  image_path: "assets/icon/icon.png"
+  ios: false
+  remove_alpha_ios: false
+  android: "launcher_icon"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/icon/icon.png"
+
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -63,6 +76,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - assets/icon/icon.png
     - assets/images/quiz-logo.png
     - assets/images/logoTrigoLab.png
     - assets/videos/SenoQ1.mp4

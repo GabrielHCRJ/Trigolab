@@ -90,8 +90,7 @@ class StartScreen extends StatelessWidget {
                     Expanded(
                       child: Image.asset(
                         'assets/images/npc2.png',
-                        width: 200,
-                        height: 200,
+                        fit: BoxFit.contain,
                       ),
                     ),
                   ],
@@ -104,26 +103,20 @@ class StartScreen extends StatelessWidget {
                       color: Color.fromARGB(255, 9, 147, 172),
                       borderRadius: BorderRadius.all(Radius.circular(30))),
                 ),
-                SizedBox(
-                  height: 4,
-                ),
-
                 // Gráfico inferior
                 SizedBox(
                   height: 4,
                 ),
                 Container(
                   width: double.infinity,
-                  height: 200,
+                  height: 180,
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(12),
                   ),
-                  child: Expanded(
-                    child: Image.asset(
-                      'assets/images/funcaoSeno.png',
-                      fit: BoxFit.contain,
-                    ),
+                  child: Image.asset(
+                    'assets/images/funcaoSeno.png',
+                    fit: BoxFit.contain,
                   ),
                 ),
               ],
