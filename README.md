@@ -1,4 +1,4 @@
-# Trigolab 🎓📱  
+#  Trigolab 🎓📱  
 **Facilitando o aprendizado de funções trigonométricas com tecnologia e interatividade!**  
 
 ## 🚀 Sobre o Trigolab  
